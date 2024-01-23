@@ -9,7 +9,7 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             title: const Text('Filtrar Precatórios'),
             onTap: () {
-              // Lógica para ação da opção 1
+              Navigator.of(context).pushNamed('/');
             },
           ),
           ListTile(
@@ -33,7 +33,7 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             title: const Text('Precatórios por ano'),
             onTap: () {
-              // Lógica para ação da opção 4
+              Navigator.of(context).pushNamed('/precatorios-ano');
             },
           ),
         ],
