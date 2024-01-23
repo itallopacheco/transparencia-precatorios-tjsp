@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:transparencia_tjsp/app_controller.dart';
-import 'package:transparencia_tjsp/home_page.dart';
+import 'package:transparencia_tjsp/app/views/home_view.dart';
 
 class AppWidget extends StatelessWidget {
   @override

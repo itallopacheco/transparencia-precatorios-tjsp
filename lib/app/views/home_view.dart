@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:transparencia_tjsp/my_drawer.dart';
-import 'package:transparencia_tjsp/tabela_dados.dart';
+import 'package:transparencia_tjsp/app/components/data_table.dart';
+import 'package:transparencia_tjsp/app/components/drawer.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -64,7 +64,7 @@ class HomePageState extends State<HomePage> {
   Widget _buildSubmitButton() {
     return ElevatedButton(
       onPressed: () {
-        // TODO: Implement form submission logic
+        // TODO: Lógica para submeter os filtros
       },
       child: const Row(
         children: [

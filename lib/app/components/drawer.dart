@@ -7,13 +7,13 @@ class MyDrawer extends StatelessWidget {
       child: ListView(
         children: [
           ListTile(
-            title: Text('Filtrar Precatórios'),
+            title: const Text('Filtrar Precatórios'),
             onTap: () {
               // Lógica para ação da opção 1
             },
           ),
           ListTile(
-            title: Row(
+            title: const Row(
               children: [
                 Text('TJSP'),
                 Icon(Icons.link),
@@ -25,13 +25,13 @@ class MyDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            title: Text('Duvidas Frequentes'),
+            title: const Text('Duvidas Frequentes'),
             onTap: () {
               // Lógica para ação da opção 3
             },
           ),
           ListTile(
-            title: Text('Precatórios por ano'),
+            title: const Text('Precatórios por ano'),
             onTap: () {
               // Lógica para ação da opção 4
             },
