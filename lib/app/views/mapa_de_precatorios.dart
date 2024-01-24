@@ -3,6 +3,7 @@ import 'package:transparencia_tjsp/app/components/drawer.dart';
 import 'package:transparencia_tjsp/app/components/precatorios_list.dart';
 import 'package:transparencia_tjsp/app/components/year_filter.dart';
 
+/// Página que exibe o Mapa Anual de Precatórios.
 class MapaPrecatoriosPage extends StatefulWidget {
   @override
   State<MapaPrecatoriosPage> createState() {
@@ -10,6 +11,7 @@ class MapaPrecatoriosPage extends StatefulWidget {
   }
 }
 
+/// Estado da página do Mapa Anual de Precatórios.
 class MapaPrecatoriosPageState extends State<MapaPrecatoriosPage> {
   @override
   Widget build(BuildContext context) {
@@ -19,7 +21,6 @@ class MapaPrecatoriosPageState extends State<MapaPrecatoriosPage> {
         actions: [],
       ),
       body: Column(
-        // Mudei para Column
         children: [
           Row(
             children: [
@@ -39,22 +40,27 @@ class MapaPrecatoriosPageState extends State<MapaPrecatoriosPage> {
   }
 }
 
+/// Método privado que constrói o botão de submissão de filtros.
 Widget _buildSubmitButton() {
   return Padding(
     padding: const EdgeInsets.all(8.0),
     child: ElevatedButton.icon(
-      onPressed: () {},
+      onPressed: () {
+        // TODO: Lógica para processar os filtros
+      },
       icon: Icon(Icons.search),
       label: Text('Filtrar'),
     ),
   );
 }
 
+/// Widget que representa um dropdown para seleção de ano.
 class YearDropdown extends StatefulWidget {
   @override
   _YearDropdownState createState() => _YearDropdownState();
 }
 
+/// Estado do dropdown de seleção de ano.
 class _YearDropdownState extends State<YearDropdown> {
   int selectedYear = DateTime.now().year; // Definindo um valor padrão
 
@@ -77,10 +83,4 @@ class _YearDropdownState extends State<YearDropdown> {
       }).toList(),
     );
   }
-}
-
-void main() {
-  runApp(MaterialApp(
-    home: MapaPrecatoriosPage(),
-  ));
 }

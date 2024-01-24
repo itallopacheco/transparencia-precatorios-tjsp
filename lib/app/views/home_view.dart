@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:transparencia_tjsp/app/components/data_table.dart';
 import 'package:transparencia_tjsp/app/components/drawer.dart';
 
+/// Página inicial do aplicativo, exibindo a transparência do TJSP.
 class HomePage extends StatefulWidget {
   @override
   State<HomePage> createState() {
@@ -9,6 +10,7 @@ class HomePage extends StatefulWidget {
   }
 }
 
+/// Estado da página inicial.
 class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
@@ -30,6 +32,7 @@ class HomePageState extends State<HomePage> {
     );
   }
 
+  /// Constrói o componente de expansão de filtro.
   Widget _buildFilterExpansionTile() {
     return ExpansionTile(
       title: const Row(
@@ -49,6 +52,7 @@ class HomePageState extends State<HomePage> {
     );
   }
 
+  /// Constrói um campo de texto para um filtro específico.
   Widget _buildFilterTextField(String labelText) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
@@ -61,6 +65,7 @@ class HomePageState extends State<HomePage> {
     );
   }
 
+  /// Constrói um botão para submeter os filtros.
   Widget _buildSubmitButton() {
     return ElevatedButton(
       onPressed: () {
